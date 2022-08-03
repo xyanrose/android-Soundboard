@@ -25,16 +25,17 @@ public abstract class SoundStore {
         Resources res = context.getApplicationContext().getResources();
 
         TypedArray labels = res.obtainTypedArray(R.array.labels);
-        TypedArray ids = res.obtainTypedArray(R.array.ids);
+        TypedArray audioIds = res.obtainTypedArray(R.array.audioIds);
+        TypedArray imageIds = res.obtainTypedArray(R.array.imageIds);
 
         Sound[] sounds = new Sound[labels.length()];
 
         for (int i = 0; i < sounds.length; i++) {
-            sounds[i] = new Sound(labels.getString(i), ids.getResourceId(i, -1));
+            sounds[i] = new Sound(labels.getString(i), audioIds.getResourceId(i, -1), imageIds.getResourceId(i, -1));
         }
 
         labels.recycle();
-        ids.recycle();
+        audioIds.recycle();
 
         return sounds;
     }

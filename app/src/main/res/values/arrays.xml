@@ -1,30 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="labels">
-        <item>Zero</item>
-        <item>One</item>
-        <item>Two</item>
-        <item>Three</item>
-        <item>Four</item>
-        <item>Five</item>
-        <item>Six</item>
-        <item>Seven</item>
-        <item>Eight</item>
-        <item>Nine</item>
-        <item>Ten</item>
+        <item>NUUUUME</item>
+        <item>VT Pride Example</item>
+        <item>Hope You Have Insurance</item>
+        <item>Aidan Love</item>
+        <item>Maximum love</item>
+        <item>Rhys Demands Human Sacrifice</item>
+        <item>Daggum Cessna</item>
+        <item>The Good Stuff</item>
+        <item>Pretty Girl</item>
+        <item>Move Bitch</item>
+        <item>Duck of Death</item>
+        <item>Not a Babeey</item>
     </string-array>
 
-    <integer-array name="ids">
-        <item>@raw/zero</item>
-        <item>@raw/one</item>
-        <item>@raw/two</item>
-        <item>@raw/three</item>
-        <item>@raw/four</item>
-        <item>@raw/five</item>
-        <item>@raw/six</item>
-        <item>@raw/seven</item>
-        <item>@raw/eight</item>
-        <item>@raw/nine</item>
-        <item>@raw/ten</item>
+    <integer-array name="audioIds">
+        <item>@raw/nuuume</item>
+        <item>@raw/go_terps</item>
+        <item>@raw/kait_driver</item>
+        <item>@raw/aidz_love</item>
+        <item>@raw/max_love</item>
+        <item>@raw/rhys_noise</item>
+        <item>@raw/god_damn_cesna</item>
+        <item>@raw/ma_luv</item>
+        <item>@raw/pretty_girl</item>
+        <item>@raw/move_bitch</item>
+        <item>@raw/duck_i_says</item>
+        <item>@raw/notababy</item>
+    </integer-array>
+
+    <integer-array name="imageIds">
+        <item>@raw/jamie</item>
+        <item>@raw/jon</item>
+        <item>@raw/kait</item>
+        <item>@raw/aidz</item>
+        <item>@raw/max</item>
+        <item>@raw/rhys</item>
+        <item>@raw/nd</item>
+        <item>@raw/ma_luv_pic</item>
+        <item>@raw/spongebob</item>
+        <item>@raw/ludacris</item>
+        <item>@raw/duck_o_death</item>
+        <item>@raw/not_a_baby</item>
+
+        <!--
+                //terryy pterodactyle I'm not a baby
+        //That's common Numa
+        //250 fuuuuel injected horsess
+
+        //duck I says
+        -->
     </integer-array>
 </resources>

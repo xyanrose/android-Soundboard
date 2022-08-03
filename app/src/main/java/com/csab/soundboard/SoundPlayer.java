@@ -35,7 +35,7 @@ public class SoundPlayer {
     }
 
     public void playSound(Sound sound) {
-        int resource = sound.getResourceId();
+        int resource = sound.getAudioResourceId();
         if (mPlayer != null) {
             if (mPlayer.isPlaying())
                 mPlayer.stop();

@@ -18,19 +18,29 @@ package com.csab.soundboard;
 public class Sound {
 
     private String mName;
-    private int mResourceId;
+    private int mAudioResourceId;
+    private int mImageResourceId;
 
-    public Sound(String name, int resourceId) {
+    public Sound(String name, int mAudioResourceId, int mImageResourceId) {
         this.mName = name;
-        this.mResourceId = resourceId;
+        this.mAudioResourceId = mAudioResourceId;
+        this.mImageResourceId = mImageResourceId;
     }
 
-    public int getResourceId() {
-        return mResourceId;
+    public int getAudioResourceId() {
+        return mAudioResourceId;
     }
 
-    public void setResourceId(int resourceId) {
-        this.mResourceId = resourceId;
+    public void setAudioResourceId(int audioResourceId) {
+        this.mAudioResourceId = audioResourceId;
+    }
+
+    public int getmImageResourceId() {
+        return mImageResourceId;
+    }
+
+    public void setmImageResourceId(int mImageResourceId) {
+        this.mImageResourceId = mImageResourceId;
     }
 
     public String getName() {

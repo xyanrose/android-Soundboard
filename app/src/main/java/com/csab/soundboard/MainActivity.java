@@ -24,6 +24,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     private SoundPlayer mSoundPlayer;
@@ -34,14 +38,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mSoundPlayer = new SoundPlayer(this);
-        Sound[] soundArray = SoundStore.getSounds(this);
+        List<Sound> soundList = Arrays.asList(SoundStore.getSounds(this));
 
         GridView gridView = (GridView) findViewById(R.id.gridView);
+        SoundTileAdapter soundsAdapter = new SoundTileAdapter(this, new ArrayList(soundList));
 
-        final ArrayAdapter<Sound> adapter =
-                new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, soundArray);
+        gridView.setAdapter(soundsAdapter);
 
-        gridView.setAdapter(adapter);
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView parent, View view, int position, long id) {
@@ -49,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
                 mSoundPlayer.playSound(sound);
             }
         });
+
+
     }
 
     @Override
